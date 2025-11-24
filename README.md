@@ -18,10 +18,10 @@ This is my journey to reproduce 10 foundational deep learning papers from scratc
 | 10| **Vision Transformer** (2020) | Transformers | ⏳ Pending |
 
 ## 🛠️ Tech Stack
-- Python 3.x
+- Python
 - PyTorch
 - NumPy & Matplotlib
 - MacBook M2 Pro / Google Colab
 
 ---
-*Follow my daily updates on Twitter/X: [لینک توییتر خودت رو اینجا بذار]*
+*Follow my daily updates on Twitter/X: (https://x.com/alir3za_taherii)*
