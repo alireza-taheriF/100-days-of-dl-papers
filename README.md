@@ -6,8 +6,8 @@ This is my journey to reproduce 10 foundational deep learning papers from scratc
 
 | # | Paper | Domain | Status |
 |---|-------|--------|--------|
-| 1 | **LeNet-5** (1998) | Deep Learning Basics | 🚧 In Progress |
-| 2 | **ResNet** (2016) | Computer Vision | ⏳ Pending |
+| 1 | **LeNet-5** (1998) | Deep Learning Basics | ✅ Completed |
+| 2 | **ResNet** (2016) | Computer Vision | In Progress |
 | 3 | **YOLO** (2016) | Object Detection | ⏳ Pending |
 | 4 | **DQN** (2013) | Reinforcement Learning | ⏳ Pending |
 | 5 | **REINFORCE** (1992)| Policy Gradient | ⏳ Pending |

@@ -44,11 +44,3 @@ lenet5_impl.ipynb: Exploratory notebook with visualizations.
 
 🔗 Reference
 Gradient-Based Learning Applied to Document Recognition (1998)
-
-
-```markdown
-| # | Paper | Domain | Status |
-|---|-------|--------|--------|
-| 1 | **LeNet-5** (1998) | Deep Learning Basics | ✅ Completed |
-| 2 | **ResNet** (2016) | Computer Vision | ⏳ Pending |
-...
