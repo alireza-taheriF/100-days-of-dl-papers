@@ -3,7 +3,7 @@ import torch.nn as nn
 import torch.optim as optim
 import argparse
 import time
-from model import ResNet18
+from model import ResNet18, PlainNet18
 from data_setup import get_data_loaders
 
 def train(args):
@@ -20,8 +20,12 @@ def train(args):
     print("📦 Loading Data...")
     train_loader, test_loader = get_data_loaders(batch_size=args.batch_size)
 
-    print("🏗️ Building ResNet-18...")
-    model = ResNet18(num_classes=10).to(device)
+    if args.model == 'resnet':
+        print("🏗️ Building ResNet-18 (With Skip Connections)...")
+        model = ResNet18(num_classes=10).to(device)
+    else:
+        print("🏗️ Building PlainNet-18 (NO Skip Connections)...")
+        model = PlainNet18(num_classes=10).to(device)
 
     criterion = nn.CrossEntropyLoss()
 
@@ -96,6 +100,7 @@ if __name__ == "__main__":
     parser.add_argument('--epochs', type=int, default=20, help='Number of epochs')
     parser.add_argument('--batch_size', type=int, default=128, help='Batch size')
     parser.add_argument('--lr', type=float, default=0.1, help='Initial learning rate')
+    parser.add_argument('--model', type=str, default='resnet', choices=['resnet', 'plain'], help='Model type')
     args = parser.parse_args()
 
     train(args)
